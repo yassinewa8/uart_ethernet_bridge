@@ -3,7 +3,7 @@
 --
 -- Ethernet CRC-32 generator (auto-framed). Computes the IEEE 802.3 FCS over a
 -- stream of input bytes. Packet boundaries are detected automatically from
--- data_valid:
+-- data_valid:ss
 --
 --   * rising edge of data_valid  -> start of packet (CRC reloaded to 0xFFFFFFFF)
 --   * falling edge of data_valid -> end of packet (final FCS latched on crc_out)
